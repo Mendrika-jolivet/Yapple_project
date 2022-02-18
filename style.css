@@ -52,6 +52,7 @@ table {
 body{
     font-family: Montserrat;
     width: 100%;
+    background-color: #EEE5DF;
 }
 h1 {color: #433340;
     font-size: 18px;
@@ -81,16 +82,19 @@ header {
     background-color: white;
     position: sticky;
     top: 0px;
+    box-sizing: border-box;
+    padding-inline: 2%;
+    
 
 }
-header div {
+.points {
     display: flex;
     align-items: center;
 }
 header img{
-    width:fit-content;
+    width:100%;
     height: fit-content;
-}
+} 
 header p{
     margin-left: 20%;
 }
@@ -98,11 +102,9 @@ nav{display: none;}
 
 main{
     width: 100%;
-    padding-top: 30 px;
-    background-color: #EEE5DF;
+   
 }
 .recette_image{
-    background-color: aqua;
     width: 100%;
     height: fit-content;
 
@@ -157,7 +159,7 @@ li img {
 .retour{
     position: sticky;
     height: fit-content;
-    top: 73px;
+    top: 55px;
     margin-bottom: 2%;
     margin-left: 2%;
 }
@@ -214,7 +216,7 @@ details {
     border: 1px solid white ;
     border-radius: 4px;
     padding: .5em .5em 0; 
-    
+   
 }
 summary {
     margin: -.5em -.5em 0;
@@ -230,6 +232,7 @@ details[open] {
 details[open] summary {
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
+    
 }
 
 details > summary {
@@ -266,6 +269,9 @@ details > summary::-webkit-details-marker {
     text-decoration: none;
     }
     .menu a:hover { border: 1px solid #F97200; }
+    header {
+        padding-bottom: 10px ;
+    }
     
    
 }
@@ -273,6 +279,10 @@ details > summary::-webkit-details-marker {
     section {
         display: flex;
         flex-direction: row;
+    }
+    
+    main{
+        margin-top: 1%;
     }
     .container_descriptif {
         display: block;
@@ -288,8 +298,23 @@ details > summary::-webkit-details-marker {
         padding-left: 0%;
         
     }
+    .add-remove-ingredient {
+        position: absolute;
+        top: 16rem;
+        right: 3rem;
+        width: fit-content;
+    }
+    .container {
+
+        margin-top: 5%;
+    }
+    .retour{
+        display: none;
+    }
     
-    
+    details {
+        width: 300px;
+    }
 
 }
 
